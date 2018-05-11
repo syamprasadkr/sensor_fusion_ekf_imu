@@ -11,7 +11,7 @@ The objective of this project is to estimate the orientation of a Garmin VIRB ca
 4) kalman_filter_imu.cpp - Implementation file for handling general functions, transfer of information between imu and kalman filter, and central coordination and control.
 5) kf.h - Header file for Kalman filter.
 6) kf.cpp - Implementation file for Kalman filter.
-7) CmakeLists.txt - The cmake file to configure and generate Makefile required for building and running the code.
+7) CMakeLists.txt - The cmake file to configure and generate Makefile required for building and running the code.
 
 # Build Instructions:
 1) Make sure all the above files are available in a folder.
@@ -25,6 +25,7 @@ Executable File: kalman_filter_sf
 1) Open a terminal and type the following commands.
 2) $cd /<path_to_folder>
 3) $./kalman_filter_sf
+
 Output File: log_ornt_<Timestamp>.csv
 
 # Testing and Results:
@@ -44,11 +45,16 @@ Please note that the roll, pitch and yaw are using Euler angle represenatation. 
 
 # Authors:
 Author1: Syamprasad K Rajagopalan
+
 Email1: syamprasad.rajagopalan@technicalproductsinc.us
+
 Email2: syamkrajagopalan@gmail.com
+
 Author2 (Supervisor): Ryan Mahoney
+
 Email1: ryan.mahoney@technicalproductsinc.us
 
 # Acknowledgement:
 Paul Chambers
+
 Email1: paul.chambers@technicalproductsinc.us
