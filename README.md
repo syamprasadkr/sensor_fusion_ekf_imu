@@ -44,12 +44,12 @@ For this test, a person walked around carrying the camera, changing the orientat
 Please note that the roll, pitch and yaw are using Euler angle represenatation. This means that the filter would fail when the pitch is around +/-(pi/2) radian. However, this scenario can be avoided for this particular project.
 
 # Authors:
-Author1: Syamprasad K Rajagopalan
-Email1: syamprasad.rajagopalan@technicalproductsinc.us
-Email2: syamkrajagopalan@gmail.com
-Author2 (Supervisor): Ryan Mahoney
-Email1: ryan.mahoney@technicalproductsinc.us
+Author1: Syamprasad K Rajagopalan <br />
+Email1: syamprasad.rajagopalan@technicalproductsinc.us <br />
+Email2: syamkrajagopalan@gmail.com <br />
+Author2 (Supervisor): Ryan Mahoney <br />
+Email1: ryan.mahoney@technicalproductsinc.us <br />
 
 # Acknowledgement:
-Paul Chambers
-Email1: paul.chambers@technicalproductsinc.us
+Paul Chambers <br />
+Email1: paul.chambers@technicalproductsinc.us <br />
