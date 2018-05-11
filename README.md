@@ -31,30 +31,25 @@ Output File: log_ornt_<Timestamp>.csv
 # Testing and Results:
 All the result files are included in the `results` folder.
 ### 1) Still test:
-For this test, the camera was in a position of zero roll, zero pitch and arbitrary yaw, placed on a level surface. The estimation of these three angles in all the timesteps were logged and plotted. The algorithm estimated all three angles to be close to zero for the entire duration of the test, which is to be expected. The plot for this test is available in the file: phase1_final_still_test.PNG. Unlike the other two tests the results were not compared to the trend indicated by raw gyroscope values and the average value indicated by accelerometer. This has been further explained below.
+For this test, the camera was in a position of zero roll, zero pitch and arbitrary yaw, placed on a level surface. The estimation of these three angles in all the timesteps were logged and plotted. The algorithm estimated all three angles to be close to zero for the entire duration of the test, which is to be expected. The plot for this test is available in the file: **phase1_final_still_test.PNG**. Unlike the other two tests the results were not compared to the trend indicated by raw gyroscope values and the average value indicated by accelerometer. This has been further explained below.
 
 ### 2) Motion test:
 The gyroscope is reliable on short term but it suffers from drift while accelerometer is reliable in long term but suffers from noise. So, the Kalman filter should come up with estimations that don't drift and don't suffer from noise issues. Another way to say it would be that the estimation should pick up the trend of gyroscope while maintaining a (average) value indicated by the accelerometer.
 
-  For this test, the camera was picked up from the table after initialization, was moved in random fashion and was placed back on the table. The file: phase1_final_motion_test.xlsx provides the logged values and plots. The Sheets `Pitch` and `Roll` provide the plots of pitch and roll respectively. Rest of the sheets are used to make the calculations and inputs required for the plots. In the plot, `Obs Pitch` line shows pitch values indicated by accelerometer and `Gyro Pitch`  shows pitch values indicated by gyroscope. The `Pitch` indicates the Kalman Filter estimate and it can be seen that this plot follows the trend of gyroscope while maintaining a value indicated by the accelerometer.
+  For this test, the camera was picked up from the table after initialization, was moved in random fashion and was placed back on the table. The file: **phase1_final_motion_test.xlsx** provides the logged values and plots. The Sheets `Pitch` and `Roll` provide the plots of pitch and roll respectively. Rest of the sheets are used to make the calculations and inputs required for the plots. In the plot, `Obs Pitch` line shows pitch values indicated by accelerometer and `Gyro Pitch`  shows pitch values indicated by gyroscope. The `Pitch` indicates the Kalman Filter estimate and it can be seen that this plot follows the trend of gyroscope while maintaining a value indicated by the accelerometer.
 
 ### 3) Walking Test:
-For this test, a person walked around carrying the camera, changing the orientation in a random fashion. The file: phase1_final_walking_test.xlsx provides the logged values and plots. In this case, though the variation in states is much more frequent, the Kalman Filter still provides an estimate that strikes balance between gyroscope readings and accelerometer readings.  
+For this test, a person walked around carrying the camera, changing the orientation in a random fashion. The file: **phase1_final_walking_test.xlsx** provides the logged values and plots. In this case, though the variation in states is much more frequent, the Kalman Filter still provides an estimate that strikes balance between gyroscope readings and accelerometer readings.  
 
 Please note that the roll, pitch and yaw are using Euler angle represenatation. This means that the filter would fail when the pitch is around +/-(pi/2) radian. However, this scenario can be avoided for this particular project.
 
 # Authors:
 Author1: Syamprasad K Rajagopalan
-
 Email1: syamprasad.rajagopalan@technicalproductsinc.us
-
 Email2: syamkrajagopalan@gmail.com
-
 Author2 (Supervisor): Ryan Mahoney
-
 Email1: ryan.mahoney@technicalproductsinc.us
 
 # Acknowledgement:
 Paul Chambers
-
 Email1: paul.chambers@technicalproductsinc.us
