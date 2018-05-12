@@ -43,7 +43,7 @@ The gyroscope is reliable on short term but it suffers from drift while accelero
 ### 3) Walking Test:
 For this test, a person walked around carrying the camera, changing the orientation in a random fashion. The file: **phase1_final_walking_test.xlsx** provides the logged values and plots. In this case, though the variation in states is much more frequent, the Kalman Filter still provides an estimate that strikes balance between gyroscope readings and accelerometer readings.  
 
-Please note that the roll, pitch and yaw are using Euler angle represenatation. This means that the filter would fail when the pitch is around +/-(pi/2) radian. However, this scenario can be avoided for this particular project.
+Please note that the roll, pitch and yaw are Euler angle represenatation. This means that the filter would fail when the pitch is around +/-(pi/2) radian. However, this scenario can be avoided for this particular project.
 
 # Authors:
 Author1: Syamprasad K Rajagopalan <br />
