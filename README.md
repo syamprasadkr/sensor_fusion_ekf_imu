@@ -1,5 +1,6 @@
 # Sensor Fusion using Extended Kalman Filter for Orientation Estimation
 
+##### Important Note: The contents of this repository should not be copied or used without permission. Please see the `Authors` section for contact information.
 
 The objective of this project is to estimate the orientation of a Garmin VIRB camera and IMU unit using Kalman Filter based approaches. In this partcular case, an Extended Kalman Filter has been used with a state space that contains roll, pitch and yaw. The gyroscope has been used to model the process while accelerometer provides the observation. Note that it is not possible to obtain a correct estimate of yaw using this approach. However, yaw has been included in the state space to make use of the short term reliability of gyroscope, in the future parts of the master project. The innovation of yaw does not influence the roll and pitch estmations. The raw sensor data, required for the Filter, is accessed by sending JSON command using cURL package. The response is parsed using Jsoncpp package. 
 
